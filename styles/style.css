@@ -34,7 +34,6 @@
   position: relative;
   min-width: 430px;
   min-height: 450px;
-  background: rgba(0, 0, 0, 0.6);
 }
 .card__link {
   display: flex;
@@ -57,7 +56,16 @@
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -2;
+}
+/* Оверлей */
+.overlay {
+  position: absolute;
+  top: 0;
   z-index: -1;
+  width: 100%;
+  min-height: 100%;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 /* ---------HEADER--------- */
@@ -67,8 +75,8 @@
   place-items: center;
   column-gap: 25px;
   min-height: 109px;
-  margin-bottom: 92px;
   grid-template: repeat(1, 1fr) / repeat(3, 1fr);
+  margin-bottom: 92px;
 }
 .header__menu {
   justify-self: start;
@@ -103,28 +111,16 @@
 .main > * {
   margin-bottom: 180px;
 }
-/* НИЖНИЙ ОТСТУП У СЕКЦИЙ */
-.mb {
-  margin-bottom: 180px;
-}
 
 /* ---------COVER--------- */
 
 .cover {
   position: relative;
-  z-index: -2;
+  z-index: -1;
   min-height: 757px;
   color: #fff;
   text-transform: uppercase;
   background: url(/images/cover.jpg) center/cover no-repeat;
-}
-.overlay {
-  position: absolute;
-  top: 0;
-  z-index: -1;
-  width: 100%;
-  min-height: 100%;
-  background: rgba(0, 0, 0, 0.6);
 }
 .cover__title {
   margin-bottom: 135px;
