@@ -21,8 +21,8 @@
   max-width: 240px;
   line-height: 135%;
 }
-.address__underline:hover {
-  text-decoration: underline;
+.address__underline {
+  border-bottom: 1px solid #000;
 }
 /* КАРТОЧКИ */
 .card {
@@ -50,22 +50,20 @@
   font-weight: 700;
   font-size: 22px;
   line-height: 120%;
-  text-transform: uppercase;
-}
-.card__title:hover {
   text-decoration: underline;
+  text-transform: uppercase;
 }
 .card__text {
   font-size: 20px;
   line-height: 120%;
 }
-.card-image-01 {
+.card-image-movie {
   background: url(../images/card-lot-01.jpg) center/contain no-repeat;
 }
-.card-image-02 {
+.card-image-book {
   background: url(../images/card-lot-02.jpg) center/contain no-repeat;
 }
-.card-image-03 {
+.card-image-painting {
   background: url(../images/card-lot-03.jpg) center/contain no-repeat;
 }
 /* ---------HEADER--------- */
@@ -90,8 +88,11 @@
 .header__links-list-item:first-child {
   list-style-type: none;
 }
-.header__link:hover {
-  text-decoration: underline;
+.header__link {
+  border-bottom: 1px solid #000;
+}
+.header__link--no-marker {
+  border-bottom: none;
 }
 .header__logo-image {
   width: 148px;
@@ -197,10 +198,8 @@
 .lots__look-more-link {
   display: inline-block;
   margin-left: 40px;
+  border-bottom: 1px solid #000;
   font-size: 20px;
-}
-.lots__look-more-link:hover {
-  text-decoration: underline;
 }
 /* ---------ABOUT--------- */
 
@@ -255,8 +254,11 @@
   font-size: 18px;
   text-align: center;
 }
-.footer__link:hover {
-  text-decoration: underline;
+.footer__link {
+  border-bottom: 1px solid #000;
+}
+.footer__link--active {
+  border-bottom: none;
 }
 .footer__social-list {
   display: flex;
